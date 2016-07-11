@@ -1,0 +1,64 @@
+{
+	"x_len" : 4.0,
+	"y_len" : 4.0,
+	"z_len" : 4.0,
+	"dx" : 0.02,
+	"dy" : 0.02,
+	"dz" : 0.02,
+	"default_material_type" : 1,
+	"pml_layers" : 20,
+	"model":
+	[
+
+		{
+			"type" : "cylinder",
+			"args": [1.0, 2.0, 0, 1.0, 2.0, 4.0, 16.0, 0.01],
+			"material_type":2
+		}
+	],
+	"material_para":
+	[
+		{
+			"name":"name",
+			"id":0,
+			"eps":1.0, 
+			"sig":0.0
+		},
+		{
+			"name":"sand",
+			"id":1,
+			"eps":4.0,
+			"sig":0.0
+		},
+		{
+			"name":"mud",
+			"id":2,
+			"eps":70.0,
+			"sig":0.0
+		},
+		{
+			"name":"glass",
+			"id":3,
+			"eps":4.0,
+			"sig":0.0
+		},
+		{
+			"name":"clay",
+			"id":4,
+			"eps":12.0,
+			"sig":0.0
+		}
+	],
+
+	"f":100000000.0,
+	"timewindow":0.000000120,
+	"source_x": 1.0,
+	"source_y": 2.0,
+	"source_z": 2.0,
+
+	"snapshot_step" : 5,
+	"snapshot_xy_flag" : 1,
+	"snapshot_xy_position":2.0,
+	"snapshot_xz_flag" : 1,
+	"snapshot_xz_position":2.0
+}

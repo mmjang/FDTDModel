@@ -1,0 +1,41 @@
+{
+	"x_len" : 100.0,
+	"y_len" : 100.0,
+	"z_len" : 100.0,
+	"dx" : 1.0,
+	"dy" : 1.0,
+	"dz" : 1.0,
+	"default_material_type" : 1,
+	"pml_layers" : 10,
+	"model":
+	[
+		{
+			"type":"cuboid",
+			"args" : [10.0, 10.0, 10.0, 37.3205, 20.0, 2.67949, 2.67949, 37.3205, 20.0, 20.0, 2.67949, 37.3205],
+			"material_type" : 2
+		},
+		{
+			"type":"ball",
+			"args" : [20.0, 20.0, 50.0, 10.0],
+			"material_type" : 3
+		},
+		{
+			"type":"cylinder",
+			"args":[50.0, 50.0, 0.0, 50.0, 50.0, 50.0, 2500.0, 30.0],
+			"material_type" : 4
+		},
+		{
+			"type":"cone",
+			"args":[50.0, 0.0, 50.0, 50.0, 50.0, 50.0, 30.0],
+			"material_type" : 5
+		}
+	],
+	"material_para":
+	[
+		{
+			"name":"name",
+			"eps":0.0, 
+			"sig":0.0
+		}
+	]
+}
